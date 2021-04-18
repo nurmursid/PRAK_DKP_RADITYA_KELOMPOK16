@@ -1,0 +1,30 @@
+#include <iostream>
+
+
+using namespace std;
+
+class Anggota {
+public:
+    void kelompok(string kelompok) {
+        cout << "Halo, kami dari kelompok " << kelompok;
+        cout << ". Shift 1" << endl; 
+        cout << "1. Ahmad Raditya Alrazi Wibowo" << endl;
+        cout << "2. Dimas Satria Permana" << endl;
+        cout << "3. Faizal Tri Ardani Wijaya" << endl;
+        cout << "4. Nurmusid Iqbal Hertanto" << endl;
+    }
+};
+
+void pembuka() {
+    cout << "+++++++++++++++++++++++++++++++++++++++++++++++++\n"
+        << "\t      Bank Kelompok 16\n"
+        << "\t      Selalu Sedia Menemani Anda\n"
+        << "\t      JL UNDIP NO1\n"
+        << "+++++++++++++++++++++++++++++++++++++++++++++++++\n";
+}
+void penutup() {
+    cout << "=====================================================\n"
+        << " =      Terima Kasih atas kunjungan anda            =\n"
+        << " =\tSemoga Anda Senang Dengan Pelayanan Kami :) =\n"
+        << "=====================================================\n";
+}
