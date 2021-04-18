@@ -66,3 +66,51 @@ void kedua() {
         cout << "Rekening 3 berjumlah Rp " << rekening[2] << endl;
     }
 }
+
+void ketiga() {
+    int penarikanuang;
+    int rekening[3];
+    rekening[0] = 1000000;
+    rekening[1] = 2000000;
+    rekening[2] = 3000000;
+    string rek;
+    cout << "Silahkan Pilih Rekening anda" << endl;
+    cout << "Rekening 1" << endl;
+    cout << "Rekening 2" << endl;
+    cout << "Rekening 3" << endl;
+    cin >> rek;
+    if (rek == "1") {
+        cout << "rekening 1 berjumlah Rp " << rekening[0] << endl;
+        cout << "Silahkan masukkan nominal yang akan anda tarik" << endl;
+        cin >> penarikanuang;
+        cout << "Uang sejumlah " << penarikanuang << " telah terambil dari rekening anda" << endl;
+    }
+    else if (rek == "2") {
+        cout << "rekening 2 berjumlah Rp " << rekening[1] << endl;
+        cout << "Silahkan masukkan nominal yang akan anda tarik" << endl;
+        cin >> penarikanuang;
+        cout << "Uang sejumlah " << penarikanuang << " telah terambil dari rekening anda" << endl;
+    }
+    else if (rek == "3") {
+        cout << "rekening 3 berjumlah Rp " << rekening[2] << endl;
+        cout << "Silahkan masukkan nominal yang akan anda tarik" << endl;
+        cin >> penarikanuang;
+        cout << "Uang sejumlah " << penarikanuang << " telah terambil dari rekening anda" << endl;
+    }
+}
+
+
+int main()
+{
+    string Username, Password, jawaban, pilihpromo;
+    int kelompok;
+    Anggota myObj;
+    myObj. kelompok ("16");
+    pembuka();
+    cout << "===Selamat Datang Silahkan Masukkan Username dan Password Anda===" << endl;
+    cout << "Username: ";
+    cin >> Username;
+    cout << "Password: ";
+    cin >> Password;
+
+
