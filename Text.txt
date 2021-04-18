@@ -113,4 +113,41 @@ int main()
     cout << "Password: ";
     cin >> Password;
 
+if (Username == "Kelompok16") {
+        if (Password == "DKP") {
+            cout << "Selamat Datang" << endl;
+        }
+        else {
+            cout << "Password salah, coba lagi!" << endl;
+            penutup();
+            exit(0);
+        }
+    }
+    else {
+        cout << "Anda tidak terdaftar" << endl;
+        penutup();
+        exit(0);
+    }
+  
+    cout << "===== Bank Kelompok 16 =====" << endl;
+    cout << "===== Silahkan Pilih Menu Dibawah ini : =====" << endl;
+    cout << "== 1. Promo Menarik ==" << endl;
+    cout << "== 2. Cek Saldo == " << endl;
+    cout << "== 3. Penarikan Uang == " << endl;
+    cout << "== 4. Keluar ATM == " << endl;
+    cout << "Ketik nomor menu yang ingin anda lihat : " << endl;
+    cin >> jawaban;
 
+    if (jawaban == "1") {
+        pertama();
+    }
+    else if (jawaban == "2") {
+        kedua();
+    }
+    else if (jawaban == "3") {
+        ketiga();
+    }
+    else if (jawaban == "4") {
+        penutup();
+    }  
+}
