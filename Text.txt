@@ -28,3 +28,42 @@ void penutup() {
         << " =\tSemoga Anda Senang Dengan Pelayanan Kami :) =\n"
         << "=====================================================\n";
 }
+void pertama() {
+    string pilihpromo; 
+    for (int i = 1; i <= 3; i++) {
+        cout << "PROMO MENARIK DARI KAMI " << i << endl;
+    }
+    cout << "silahkan pilih dari promo diatas" << endl;
+    cin >> pilihpromo;
+    if (pilihpromo == "1") {
+        cout << "Selamat!!! Anda Mendapat Hadiah Mobil" << endl;
+    }
+    else if (pilihpromo == "2") {
+        cout << "Selamat!!! Anda Mendapat Umrah Gratis" << endl;
+    }
+    else if (pilihpromo == "3") {
+        cout << "Selamat!!! Anda Mendapat Liburan ke Bali" << endl;
+    }
+}
+void kedua() {
+    int rekening[3];
+    rekening[0] = 1000000;
+    rekening[1] = 2000000;
+    rekening[2] = 3000000;
+    string rek;
+    cout << "Silahkan Pilih Rekening anda" << endl;
+    cout << "Rekening 1" << endl;
+    cout << "Rekening 2" << endl;
+    cout << "Rekening 3" << endl;
+    cin >> rek;
+    if (rek == "1") {
+        cout << "Rekening 1 berjumlah Rp " << rekening[0] << endl;
+    }
+    else if (rek == "2") {
+        cout << "Rekening 2 berjumlah Rp " << rekening[1] << endl;
+    }
+    else if (rek == "3") {
+        cout << "Rekening 3 berjumlah Rp " << rekening[2] << endl;
+    }
+}
+
